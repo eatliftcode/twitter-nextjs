@@ -1,11 +1,17 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Sidebar from "../components/Sidebar";
 
 export default function Home() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
+    <div>
+      <Head>
+        <title>Hello World</title>
+        <link rel="icon" href="/favicon.ico"/>
+      </Head>
+
+      <main className="flex min-h-screen max-w-7xl mx-auto">
+        <Sidebar/>
+      </main>
+    </div>
+  );
 }
